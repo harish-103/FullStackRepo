@@ -20,7 +20,7 @@ public class FileArray
 		        System.out.println(files.lastModified());
 		        
 		        
-		    }
+		    } 
 		}
 	}
 }
