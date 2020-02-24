@@ -2,19 +2,15 @@ package com.multithreading;
 
 public class ExtendsPingPong extends Thread
 {
-	 Thread t1,t2;
-	public ExtendsPingPong()
+	public ExtendsPingPong(String threadName)
 	{
-		t1=new Thread(this);
-		t2=new Thread(this);
-		t1.setName("PING");
-		t2.setName("PONG");
-		t1.start();
-		t2.start();
+		super.setName(threadName);
+		super.start();
 	}
 	public static void main(String[] args) 
 	{
-		new PingPong();
+		new ExtendsPingPong("PING");
+		new ExtendsPingPong("PONG");
 	}
 	
 	public void run()

@@ -17,6 +17,7 @@ public class ReadWrite
 		int i = 0;
 		do {
 		i = fis.read();
+		//System.out.println(i);
 		if(i != -1)
 		sb.append((char)i);
 		}
